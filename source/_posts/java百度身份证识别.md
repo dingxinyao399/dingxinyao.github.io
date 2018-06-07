@@ -29,7 +29,7 @@ categories:
 
    在创建应用后会有个JDK包下载，下载后导入项目即可，我用的是maven，所以在pom.xml文件中写入如下：
 
-   ```
+   ```java
    <!--百度文字识别接口-->
    <dependency>
       <groupId>com.baidu.aip</groupId>
@@ -40,7 +40,7 @@ categories:
 
 2.  Access Token获取方法
 
-```
+```java
 
 /**
  * 百度文字识别demo
@@ -111,7 +111,7 @@ public class baiduOcr {
 
 调用baiduOcr.getAuth()就能获取到result，result格式如下：
 
-```
+```java
 result: {
 "access_token": "24.6c5e1ff107f0e8bcef8c46d3424a0e78.2592000.1485516651.282335-8574074",
 "session_key":"9mzdDZXu3dENdFZQurfg0Vz8slgSgvvOAUebNFzyzcpQ5EnbxbF+hfG9DQkpUVQdh4p6HbQcAiz5RmuBAja1JJGgIdJI",
@@ -128,7 +128,7 @@ result: {
 
 ### 3.将本地图片进行BASE64位编码
 
-```
+```java
 import sun.misc.BASE64Encoder;
 import java.io.File;
 import java.io.FileInputStream;
@@ -164,7 +164,7 @@ public class BASE64 {
 
 ### 4.文字识别
 
-```
+```java
 public static String request(String httpUrl, String httpArg) {
     BufferedReader reader = null;
     String result = null;
@@ -207,7 +207,7 @@ public static String request(String httpUrl, String httpArg) {
 
 我写了个main方法去调用，当然也可以写在controller中或者Action中调用
 
-```
+```java
   public static void main(String[] args) {
   		//获取本地的绝对路径图片
         File file = new File("C:\\Users\\Administrator\\Desktop\\123.png");
@@ -242,7 +242,7 @@ public static String request(String httpUrl, String httpArg) {
 
 获取到的结果是json格式，于是我把他转换成了HashMap，代码如下：
 
-```
+```java
  public static HashMap<String,String> getHashMapByJson(String jsonResult){
        HashMap map = new HashMap<String,String>();
        try {
@@ -289,7 +289,7 @@ public static String request(String httpUrl, String httpArg) {
 
 ![](3.png)
 
-```
+```java
 {
 	"log_id": 6403608607836186924,
 	"words_result_num": 6,
@@ -355,6 +355,14 @@ public static String request(String httpUrl, String httpArg) {
 ```
 
 其中main方法中的map打印为：北京市海淀区上地十号七栋2单元110室, 532101198906010015, 汉, 男, 百度熊, 19890601
+
+
+
+
+
+```java
+
+```
 
 OK啦，完美获取，在获取到返回结果后你想返回List还是像我一样返回Map都是可以的，这个随需求来定
 
