@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>java百度身份证识别 | Dxy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="原创,java,百度Ocr,身份证识别">
+    <link rel="shortcut icon" href="/img/tunge.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.1">
+    
+        <link rel="stylesheet" href="/css/third-party/gitment.css?v=1.3.1">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	false,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":true,"lazy":true,"owner":"dingxinyao399","repo":"gitment","oauth":{"client_id":"1e1ee60eafa102b0e4b9","client_secret":"231b0ee1b34e4df3911ae3ea74a18c00d8bd7b4e"},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/tunge.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Dingxinyao</h5>
+          <a href="mailto:347244562@qq.com" title="347244562@qq.com" class="mail">
+            
+              <span>3</span>
+            
+              <span>4</span>
+            
+              <span>7</span>
+            
+              <span>2</span>
+            
+              <span>4</span>
+            
+              <span>4</span>
+            
+              <span>5</span>
+            
+              <span>6</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/dingxinyao399" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=347244562&amp;site=qq&amp;menu=yes" target="_blank">
+                  <i class="icon icon-lg icon-qq"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://blog.csdn.net/dingxinyao" target="_blank">
+                  <i class="icon icon-lg icon-black-tie"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://www.jianshu.com/u/fdeef78912f7" target="_blank">
+                  <i class="icon icon-lg icon-leanpub"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                类别
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                档案馆
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>java百度身份证识别</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="/img/banner.jpg" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">java百度身份证识别</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-06-07T07:01:18.000Z" itemprop="datePublished" class="page-time">
+  2018-06-07
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/java/">java</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/java/百度Ocr/">百度Ocr</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/java/百度Ocr/身份证识别/">身份证识别</a></li></ul></li></ul></li></ul>
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-java百度身份证识别"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">java百度身份证识别</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-06-07 15:01:18" datetime="2018-06-07T07:01:18.000Z"  itemprop="datePublished">2018-06-07</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/java/">java</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/java/百度Ocr/">百度Ocr</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/java/百度Ocr/身份证识别/">身份证识别</a></li></ul></li></ul></li></ul>
+
+
+
+            
+
+            
+
+
+<span class="post-comments-counter" id="/2018/06/07/java百度身份证识别/">
+    <span class="post-meta-item-icon">
+        <i class="icon icon-comment-o"></i>
+    </span>
+    
+    <a href="/2018/06/07/java百度身份证识别/#gitment-display-button" onclick="ShowGitment()">
+        <span class="post-comments-count gitment-comments-count" itemprop="commentsCount"></span>
+    </a>
+</span>
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <p>在项目里因客户要求在注册时要求上传身份证照片来识别身份证上信息来录入信息资料，于是采用了百度ocr文字识别，废话不多说，进入正题</p>
+<h3 id="1-登录百度云-没有就先注册"><a href="#1-登录百度云-没有就先注册" class="headerlink" title="1.登录百度云(没有就先注册)"></a>1.登录百度云(没有就先注册)</h3><p>​     在全部产品–人工智能–文字识别创建一个应用，在创建中选择对应要的功能，我只做了身份证识别，所以我选择了默认自带的，如图</p>
+<figure class="image-box">
+                <img src="1.png" alt="" title="" class="">
+                <p></p>
+            </figure>
+<p>创建后则在列表能看到，点进详情能获取到两个百度自动生成的值API Key ，Secret Key </p>
+<p><img src="2.png" alt=""></p>
+<p>这两者是调用ocr文字识别最重要的key，接下来就可以写代码了</p>
+<h3 id="2-Access-Token获取-官网地址"><a href="#2-Access-Token获取-官网地址" class="headerlink" title="2.Access Token获取(官网地址)"></a>2.Access Token获取(<a href="http://ai.baidu.com/docs#/Auth/top" target="_blank" rel="noopener">官网地址</a>)</h3><ol>
+<li><p>导入Java SDK工具包</p>
+<p>在创建应用后会有个JDK包下载，下载后导入项目即可，我用的是maven，所以在pom.xml文件中写入如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--百度文字识别接口--&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">   &lt;groupId&gt;com.baidu.aip&lt;/groupId&gt;</span><br><span class="line">   &lt;artifactId&gt;java-sdk&lt;/artifactId&gt;</span><br><span class="line">   &lt;version&gt;4.3.2&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Access Token获取方法</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 百度文字识别demo</span><br><span class="line"> */</span><br><span class="line">public class baiduOcr &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 获取权限token</span><br><span class="line">     * @return 返回示例：</span><br><span class="line">     * &#123;</span><br><span class="line">     * &quot;access_token&quot;: &quot;24.c9303e47f0729c40f2bc2be6f8f3d589.2592000.1530936208.282335-1234567&quot;,</span><br><span class="line">     * &quot;expires_in&quot;:2592000</span><br><span class="line">     * &#125;</span><br><span class="line">     */</span><br><span class="line">    public static String getAuth() &#123;</span><br><span class="line">        // 官网获取的 API Key</span><br><span class="line">        String clientId = &quot;API Key&quot;;</span><br><span class="line">        // 官网获取的 Secret Key</span><br><span class="line">        String clientSecret = &quot;Secret Key &quot;;</span><br><span class="line">        return getAuth(clientId, clientSecret);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 获取API访问token</span><br><span class="line">     * 该token有一定的有效期，需要自行管理，当失效时需重新获取.</span><br><span class="line">     * @param ak - 百度云的 API Key</span><br><span class="line">     * @param sk - 百度云的 Securet Key</span><br><span class="line">     * @return assess_token 示例：</span><br><span class="line">     * &quot;24.c9303e47f0729c40f2bc2be6f8f3d589.2592000.1530936208.282335-1234567&quot;</span><br><span class="line">     */</span><br><span class="line">    public static String getAuth(String ak, String sk) &#123;</span><br><span class="line">        // 获取token地址</span><br><span class="line">        String authHost = &quot;https://aip.baidubce.com/oauth/2.0/token?&quot;;</span><br><span class="line">        String getAccessTokenUrl = authHost</span><br><span class="line">                // 1. grant_type为固定参数</span><br><span class="line">                + &quot;grant_type=client_credentials&quot;</span><br><span class="line">                // 2. 官网获取的 API Key</span><br><span class="line">                + &quot;&amp;client_id=&quot; + ak</span><br><span class="line">                // 3. 官网获取的 Secret Key</span><br><span class="line">                + &quot;&amp;client_secret=&quot; + sk;</span><br><span class="line">        try &#123;</span><br><span class="line">            URL realUrl = new URL(getAccessTokenUrl);</span><br><span class="line">            // 打开和URL之间的连接</span><br><span class="line">            HttpURLConnection connection = (HttpURLConnection) realUrl.openConnection();</span><br><span class="line">            connection.setRequestMethod(&quot;POST&quot;);//百度推荐使用POST请求</span><br><span class="line">            connection.connect();</span><br><span class="line">            // 获取所有响应头字段</span><br><span class="line">            Map&lt;String, List&lt;String&gt;&gt; map = connection.getHeaderFields();</span><br><span class="line">            // 定义 BufferedReader输入流来读取URL的响应</span><br><span class="line">            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));</span><br><span class="line">            String result = &quot;&quot;;</span><br><span class="line">            String line;</span><br><span class="line">            while ((line = in.readLine()) != null) &#123;</span><br><span class="line">                result += line;</span><br><span class="line">            &#125;</span><br><span class="line">            System.err.println(&quot;result:&quot; + result);</span><br><span class="line">            JSONObject jsonObject = new JSONObject(result);</span><br><span class="line">            String access_token = jsonObject.getString(&quot;access_token&quot;);</span><br><span class="line">            return access_token;</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            System.err.printf(&quot;获取token失败！&quot;);</span><br><span class="line">            e.printStackTrace(System.err);</span><br><span class="line">        &#125;</span><br><span class="line">        return null;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>调用baiduOcr.getAuth()就能获取到result，result格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">result: &#123;</span><br><span class="line">&quot;access_token&quot;: &quot;24.6c5e1ff107f0e8bcef8c46d3424a0e78.2592000.1485516651.282335-8574074&quot;,</span><br><span class="line">&quot;session_key&quot;:&quot;9mzdDZXu3dENdFZQurfg0Vz8slgSgvvOAUebNFzyzcpQ5EnbxbF+hfG9DQkpUVQdh4p6HbQcAiz5RmuBAja1JJGgIdJI&quot;,</span><br><span class="line">&quot;scope&quot;: &quot;public wise_adapt&quot;,</span><br><span class="line">&quot;refresh_token&quot;: &quot;25.5f706c15bfc5799897518ab954b2bc07.1234567890.1843716344.1234567-1234567&quot;,</span><br><span class="line">&quot;session_secret&quot;: &quot;dfac94a3489fe9fca7c3221cbf7525ff&quot;,</span><br><span class="line">&quot;expires_in&quot;: 2592000</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中暂时有用的就两个值，access_token和<strong>expires_in</strong> </p>
+<p>第一个是调用文字识别必带的一个参数，第二个是Access Token 的有效期一般是一个月</p>
+<h3 id="3-将本地图片进行BASE64位编码"><a href="#3-将本地图片进行BASE64位编码" class="headerlink" title="3.将本地图片进行BASE64位编码"></a>3.将本地图片进行BASE64位编码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">import sun.misc.BASE64Encoder;</span><br><span class="line">import java.io.File;</span><br><span class="line">import java.io.FileInputStream;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line"></span><br><span class="line">public class BASE64 &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 将本地图片进行Base64位编码</span><br><span class="line">     *</span><br><span class="line">     * @param imgUrl</span><br><span class="line">     *            图片的url路径，如e:\\123.png</span><br><span class="line">     * @return</span><br><span class="line">     */</span><br><span class="line">    public static String encodeImgageToBase64(File imageFile) &#123;</span><br><span class="line">    	// 将图片文件转化为字节数组字符串，并对其进行Base64编码处理</span><br><span class="line">        // 其进行Base64编码处理</span><br><span class="line">        byte[] data = null;</span><br><span class="line">        // 读取图片字节数组</span><br><span class="line">        try &#123;</span><br><span class="line">            InputStream in = new FileInputStream(imageFile);</span><br><span class="line">            data = new byte[in.available()];</span><br><span class="line">            in.read(data);</span><br><span class="line">            in.close();</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        // 对字节数组Base64编码</span><br><span class="line">        BASE64Encoder encoder = new BASE64Encoder();</span><br><span class="line">        return encoder.encode(data);// 返回Base64编码过的字节数组字符串</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-文字识别"><a href="#4-文字识别" class="headerlink" title="4.文字识别"></a>4.文字识别</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">public static String request(String httpUrl, String httpArg) &#123;</span><br><span class="line">    BufferedReader reader = null;</span><br><span class="line">    String result = null;</span><br><span class="line">    StringBuffer sbf = new StringBuffer();</span><br><span class="line">    try &#123;</span><br><span class="line">        //用java JDK自带的URL去请求</span><br><span class="line">        URL url = new URL(httpUrl);</span><br><span class="line">        HttpURLConnection connection = (HttpURLConnection) url</span><br><span class="line">                .openConnection();</span><br><span class="line">        //设置该请求的消息头</span><br><span class="line">        //设置HTTP方法：POST</span><br><span class="line">        connection.setRequestMethod(&quot;POST&quot;);</span><br><span class="line">        //设置其Header的Content-Type参数为application/x-www-form-urlencoded</span><br><span class="line">        connection.setRequestProperty(&quot;Content-Type&quot;,</span><br><span class="line">                &quot;application/x-www-form-urlencoded&quot;);</span><br><span class="line">        // 填入apikey到HTTP header</span><br><span class="line">        connection.setRequestProperty(&quot;apikey&quot;, &quot;uml8HFzu2hFd8iEG2LkQGMxm&quot;);</span><br><span class="line">        //将第二步获取到的token填入到HTTP header</span><br><span class="line">        connection.setRequestProperty(&quot;access_token&quot;, baiduOcr.getAuth());</span><br><span class="line">        connection.setDoOutput(true);</span><br><span class="line">        connection.getOutputStream().write(httpArg.getBytes(&quot;UTF-8&quot;));</span><br><span class="line">        connection.connect();</span><br><span class="line">        InputStream is = connection.getInputStream();</span><br><span class="line">        reader = new BufferedReader(new InputStreamReader(is, &quot;UTF-8&quot;));</span><br><span class="line">        String strRead = null;</span><br><span class="line">        while ((strRead = reader.readLine()) != null) &#123;</span><br><span class="line">            sbf.append(strRead);</span><br><span class="line">            sbf.append(&quot;\r\n&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        reader.close();</span><br><span class="line">        result = sbf.toString();</span><br><span class="line">    &#125; catch (Exception e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>写到如此，身份证的文字识别代码就差不多都写完了，赶紧调用看看效果吧</p>
+<p>我写了个main方法去调用，当然也可以写在controller中或者Action中调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">		//获取本地的绝对路径图片</span><br><span class="line">      File file = new File(&quot;C:\\Users\\Administrator\\Desktop\\123.png&quot;);</span><br><span class="line">      //进行BASE64位编码</span><br><span class="line">      String imageBase = BASE64.encodeImgageToBase64(file);</span><br><span class="line">      imageBase = imageBase.replaceAll(&quot;\r\n&quot;,&quot;&quot;);</span><br><span class="line">      imageBase = imageBase.replaceAll(&quot;\\+&quot;,&quot;%2B&quot;);</span><br><span class="line">      //百度云的文字识别接口,后面参数为获取到的token</span><br><span class="line">      String httpUrl=&quot;</span><br><span class="line">      https://aip.baidubce.com/rest/2.0/ocr/v1/idcard?access_token=&quot;+baiduOcr.getAuth();</span><br><span class="line">      String httpArg = &quot;detect_direction=true&amp;id_card_side=front&amp;image=&quot;+imageBase;</span><br><span class="line">      String jsonResult = request(httpUrl, httpArg);</span><br><span class="line">      System.out.println(&quot;返回的结果---------&gt;&quot;+jsonResult);</span><br><span class="line">      HashMap&lt;String, String&gt; map = getHashMapByJson(jsonResult);</span><br><span class="line">      Collection&lt;String&gt; values=map.values();</span><br><span class="line">      Iterator&lt;String&gt; iterator2=values.iterator();</span><br><span class="line">      while (iterator2.hasNext())&#123;</span><br><span class="line">          System.out.print(iterator2.next()+&quot;, &quot;);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>请求参数我就直接把官网上的弄下来了</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否必选</th>
+<th>类型</th>
+<th>可选值范围</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detect_direction</td>
+<td>false</td>
+<td>boolean</td>
+<td>true、false</td>
+<td>是否检测图像旋转角度，默认不检测，即：false。朝向是指输入图像是正常方向、逆时针旋转90/180/270度。可选值包括: - true：检测旋转角度并矫正识别； - false：不检测旋转角度，针对摆放情况不可控制的情况建议本参数置为true。</td>
+</tr>
+<tr>
+<td>id_card_side</td>
+<td>true</td>
+<td>string</td>
+<td>front、back</td>
+<td>front：身份证含照片的一面；back：身份证带国徽的一面</td>
+</tr>
+<tr>
+<td>image</td>
+<td>true</td>
+<td>string</td>
+<td>-</td>
+<td>图像数据，base64编码后进行urlencode，要求base64编码和urlencode后大小不超过4M，最短边至少15px，最长边最大4096px,支持jpg/png/bmp格式</td>
+</tr>
+<tr>
+<td>detect_risk</td>
+<td>false</td>
+<td>string</td>
+<td>true,false</td>
+<td>是否开启身份证风险类型(身份证复印件、临时身份证、身份证翻拍、修改过的身份证)功能，默认不开启，即：false。可选值:true-开启；false-不开启</td>
+</tr>
+</tbody>
+</table>
+<p>获取到的结果是json格式，于是我把他转换成了HashMap，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">public static HashMap&lt;String,String&gt; getHashMapByJson(String jsonResult)&#123;</span><br><span class="line">      HashMap map = new HashMap&lt;String,String&gt;();</span><br><span class="line">      try &#123;</span><br><span class="line">          JSONObject jsonObject = new JSONObject(jsonResult);</span><br><span class="line">          JSONObject words_result= jsonObject.getJSONObject(&quot;words_result&quot;);</span><br><span class="line">          Iterator&lt;String&gt; it = words_result.keys();</span><br><span class="line">          while (it.hasNext())&#123;</span><br><span class="line">              String key = it.next();</span><br><span class="line">              JSONObject result = words_result.getJSONObject(key);</span><br><span class="line">              String value=result.getString(&quot;words&quot;);</span><br><span class="line">              switch (key)&#123;</span><br><span class="line">                  case &quot;姓名&quot;:</span><br><span class="line">                      map.put(&quot;name&quot;,value);</span><br><span class="line">                      break;</span><br><span class="line">                  case &quot;民族&quot;:</span><br><span class="line">                      map.put(&quot;nation&quot;,value);</span><br><span class="line">                      break;</span><br><span class="line">                  case &quot;住址&quot;:</span><br><span class="line">                      map.put(&quot;address&quot;,value);</span><br><span class="line">                      break;</span><br><span class="line">                  case &quot;公民身份号码&quot;:</span><br><span class="line">                      map.put(&quot;IDCard&quot;,value);</span><br><span class="line">                      break;</span><br><span class="line">                  case &quot;出生&quot;:</span><br><span class="line">                      map.put(&quot;Birth&quot;,value);</span><br><span class="line">                      break;</span><br><span class="line">                  case &quot;性别&quot;:</span><br><span class="line">                      map.put(&quot;sex&quot;,value);</span><br><span class="line">                      break;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125; catch (Exception e) &#123;</span><br><span class="line">          e.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line">      return map;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>至此全部代码都结束了，我把身份证附上(百度官网上弄下来的测试身份证，总不能用我自己吧)</p>
+<figure class="image-box">
+                <img src="123.png" alt="" title="" class="">
+                <p></p>
+            </figure>
+<p>让我们来运行看下效果吧</p>
+<figure class="image-box">
+                <img src="3.png" alt="" title="" class="">
+                <p></p>
+            </figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;log_id&quot;: 6403608607836186924,</span><br><span class="line">	&quot;words_result_num&quot;: 6,</span><br><span class="line">	&quot;direction&quot;: 0,</span><br><span class="line">	&quot;image_status&quot;: &quot;normal&quot;,</span><br><span class="line">	&quot;words_result&quot;: &#123;</span><br><span class="line">		&quot;住址&quot;: &#123;</span><br><span class="line">			&quot;location&quot;: &#123;</span><br><span class="line">				&quot;width&quot;: 197,</span><br><span class="line">				&quot;top&quot;: 150,</span><br><span class="line">				&quot;height&quot;: 37,</span><br><span class="line">				&quot;left&quot;: 78</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;words&quot;: &quot;北京市海淀区上地十号七栋2单元110室&quot;</span><br><span class="line">		&#125;,</span><br><span class="line">		&quot;出生&quot;: &#123;</span><br><span class="line">			&quot;location&quot;: &#123;</span><br><span class="line">				&quot;width&quot;: 148,</span><br><span class="line">				&quot;top&quot;: 111,</span><br><span class="line">				&quot;height&quot;: 15,</span><br><span class="line">				&quot;left&quot;: 79</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;words&quot;: &quot;19890601&quot;</span><br><span class="line">		&#125;,</span><br><span class="line">		&quot;姓名&quot;: &#123;</span><br><span class="line">			&quot;location&quot;: &#123;</span><br><span class="line">				&quot;width&quot;: 63,</span><br><span class="line">				&quot;top&quot;: 32,</span><br><span class="line">				&quot;height&quot;: 25,</span><br><span class="line">				&quot;left&quot;: 77</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;words&quot;: &quot;百度熊&quot;</span><br><span class="line">		&#125;,</span><br><span class="line">		&quot;公民身份号码&quot;: &#123;</span><br><span class="line">			&quot;location&quot;: &#123;</span><br><span class="line">				&quot;width&quot;: 252,</span><br><span class="line">				&quot;top&quot;: 243,</span><br><span class="line">				&quot;height&quot;: 15,</span><br><span class="line">				&quot;left&quot;: 139</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;words&quot;: &quot;532101198906010015&quot;</span><br><span class="line">		&#125;,</span><br><span class="line">		&quot;性别&quot;: &#123;</span><br><span class="line">			&quot;location&quot;: &#123;</span><br><span class="line">				&quot;width&quot;: 20,</span><br><span class="line">				&quot;top&quot;: 76,</span><br><span class="line">				&quot;height&quot;: 15,</span><br><span class="line">				&quot;left&quot;: 71</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;words&quot;: &quot;男&quot;</span><br><span class="line">		&#125;,</span><br><span class="line">		&quot;民族&quot;: &#123;</span><br><span class="line">			&quot;location&quot;: &#123;</span><br><span class="line">				&quot;width&quot;: 12,</span><br><span class="line">				&quot;top&quot;: 76,</span><br><span class="line">				&quot;height&quot;: 15,</span><br><span class="line">				&quot;left&quot;: 172</span><br><span class="line">			&#125;,</span><br><span class="line">			&quot;words&quot;: &quot;汉&quot;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中main方法中的map打印为：北京市海淀区上地十号七栋2单元110室, 532101198906010015, 汉, 男, 百度熊, 19890601</p>
+<p>OK啦，完美获取，在获取到返回结果后你想返回List还是像我一样返回Map都是可以的，这个随需求来定</p>
+<p>本人学艺不精，上面有什么问题请大佬多指导，看到后会马上修改，谢谢啦</p>
+
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-06-07T08:06:47.395Z" itemprop="dateUpdated">2018-06-07 16:06:47</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2018/06/07/java百度身份证识别/" target="_blank" rel="external">http://yoursite.com/2018/06/07/java百度身份证识别/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/tunge.png" alt="Dingxinyao">
+            Dingxinyao
+        </a>
+    </footer>
+</blockquote>
+
+        
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/原创/">原创</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/百度Ocr/">百度Ocr</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/身份证识别/">身份证识别</a></li></ul>
+
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/06/07/java百度身份证识别/&title=《java百度身份证识别》 — Dxy&pic=http://yoursite.com/img/tunge.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/06/07/java百度身份证识别/&title=《java百度身份证识别》 — Dxy&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/06/07/java百度身份证识别/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《java百度身份证识别》 — Dxy&url=http://yoursite.com/2018/06/07/java百度身份证识别/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/07/java百度身份证识别/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+      
+    <div onclick="ShowGitment()" id="gitment-display-button" style="display: block;">
+        <span>显示 Gitment 评论</span>
+    </div>
+    <div id="gitment" class="hide"></div>
+
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="next">
+      <a href="/2018/06/05/Error-Comments-Not-Initialized/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Error: Comments Not Initialized</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-登录百度云-没有就先注册"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.登录百度云(没有就先注册)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-Access-Token获取-官网地址"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.Access Token获取(官网地址)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-将本地图片进行BASE64位编码"><span class="post-toc-number">3.</span> <span class="post-toc-text">3.将本地图片进行BASE64位编码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-文字识别"><span class="post-toc-number">4.</span> <span class="post-toc-text">4.文字识别</span></a></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+</div>
+
+        <footer class="footer">
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Dingxinyao &copy; 2018
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/06/07/java百度身份证识别/&title=《java百度身份证识别》 — Dxy&pic=http://yoursite.com/img/tunge.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/06/07/java百度身份证识别/&title=《java百度身份证识别》 — Dxy&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/06/07/java百度身份证识别/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《java百度身份证识别》 — Dxy&url=http://yoursite.com/2018/06/07/java百度身份证识别/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/07/java百度身份证识别/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACPElEQVR42u3aS5KDMAxFUfa/aXqaqjRwn0QGlq9HqYSATwaK9TkOvM6PdfU+ueb+/asrX1syZMhYlnHers9rvr91dTcCuN8P35sMGTL2YdQ2xMMuiZb3rx/2LEOGDBmAkQbcWqCXIUOGjFoQrG2LJLEyZMiQkSaxZFu1Uhq5z2u5uAwZMhZkvJVk/uL1T/obMmTIWIpxNlZa+u8ktA87kSFDxmhGGgQ75X4Svskx9PK7MmTIGMrgjclO0a0z2BGEWhkyZIxmkGBH8sf0qEcOjijcy5AhYwNGOu6Qhtr06MmbEygXlyFDxuIMXjIjoTBtW5IRtOCeMmTI2IbBq3Sd8Yu0xIaOrTJkyBjKICGVfxr8cu2m5pH+M8iQIWNZRjpnxY90vIVZS2LRAJkMGTJGMDqP4cG3M5yBgq8MGTK2YaRb55h4eALfrTVlJkOGjEUYvDFQa0b2W5VBEJchQ8ZQRnqLdHNpi7R2jQwZMnZg9EtsnSSWh+DLn1WGDBkbMGpHtH6prtaeRNMiMmTIGMTgIxcc3EmGeTlPhgwZ+zDS8lmtANcp1aGEVoYMGaMZaVsxTVnT4FtLd2XIkDGbcYaLNz7TVmXnoClDhozZjDTRvS/Zk4d1Gg8tgAwZMhZnpMGRl/X58EQacON/DxkyZIxgdIYqas3ITir7z7dkyJAhAw9spQfKWtrcCrgyZMgYzUibnZ2s+udHQxkyZCzIqCWxaWOyA3i4mwwZMkYzaknmW4+pHRNb/Q0ZMmSsxPgDqkgzCBa4kAwAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.1"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.1"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.1"></script>
+
+<!-- third-party -->
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.1"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+    
+    
+        <script type="text/javascript" src="/js/plugins/gitmint.browser.js?v=1.3.1"></script>
+<script type="text/javascript" src="/js/plugins/gitment.js?v=1.3.1"></script>
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    
+</body>
+</html>
