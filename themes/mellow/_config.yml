@@ -58,6 +58,9 @@ email: 347244562@qq.com
 ## http://http://fontawesome.dashgame.com/
 menu_link: 
   github: https://github.com/dingxinyao399 | github
+  qq: http://wpa.qq.com/msgrd?v=3&uin=347244562&site=qq&menu=yes | qq
+  black-tie: https://blog.csdn.net/dingxinyao | black-tie
+  leanpub: https://www.jianshu.com/u/fdeef78912f7 | leanpub
 
 # 添加新菜单项遵循以下规则
 ## menu:
@@ -156,9 +159,9 @@ share_items:
   weibo: true
   wechat: true
   qq: true
-  facebook: false
-  twitter: false
-  google: false
+  facebook: true
+  twitter: true
+  google: true
 
 # 目录
 ## 捕捉文章markdown的#一级标题 / ##二级标题 / ###三级标题等
